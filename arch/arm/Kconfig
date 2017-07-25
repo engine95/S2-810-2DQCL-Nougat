@@ -1540,6 +1540,7 @@ config ARM_CPU_TOPOLOGY
 
 config SCHED_MC
 	bool "Multi-core scheduler support"
+	default y
 	depends on ARM_CPU_TOPOLOGY
 	help
 	  Multi-core scheduler support improves the CPU scheduler's decision
@@ -1548,6 +1549,7 @@ config SCHED_MC
 
 config SCHED_SMT
 	bool "SMT scheduler support"
+	default y
 	depends on ARM_CPU_TOPOLOGY
 	help
 	  Improves the CPU scheduler's decision making when dealing with
