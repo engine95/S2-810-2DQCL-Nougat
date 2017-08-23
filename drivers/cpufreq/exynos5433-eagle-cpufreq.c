@@ -405,9 +405,9 @@ static void __init set_volt_table_CA15(void)
 		break;
 	default :
 #if defined(CONFIG_SOC_EXYNOS5433_L)
-		max_support_idx_CA15 = L5;	/* 2.0 GHz */
+		max_support_idx_CA15 = L3;	/* 2.2 GHz */
 #else
-		max_support_idx_CA15 = L5;	/* 2.0 GHz */
+		max_support_idx_CA15 = L3;	/* 2.2 GHz */
 #endif
 	}
 
