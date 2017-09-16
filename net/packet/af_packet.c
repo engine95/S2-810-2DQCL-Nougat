@@ -2793,7 +2793,6 @@ static int packet_recvmsg(struct kiocb *iocb, struct socket *sock,
 	 * a user program they can ask the device for its MTU
 	 * anyway.
  	 */
-
 	copied = skb->len;
 	if (copied > len) {
 		copied = len;
